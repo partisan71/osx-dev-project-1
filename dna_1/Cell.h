@@ -19,6 +19,5 @@
 @end
 
 @interface Cell (Mutation)
--(void)mutate:(int) percent; // мутирует % первых генов
--(void)mutateRandomGene: (int) percent; // мутирует % случайных генов
+-(void)mutate:(int) percent; 
 @end;

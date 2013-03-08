@@ -8,12 +8,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "dna_1/Cell.m"
-         timestampString = "384371679.978697"
+         timestampString = "384421343.577034"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "86"
-         endingLineNumber = "86"
-         landmarkName = "-mutateRandomGene:"
+         startingLineNumber = "74"
+         endingLineNumber = "74"
+         landmarkName = "-mutate:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

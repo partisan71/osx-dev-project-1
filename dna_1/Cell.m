@@ -68,21 +68,9 @@
 @end
 
 @implementation Cell (Mutation)
--(void)mutate:(int) percent{
-    percent=percent%100; //на случай если передадут больше 100%
-    
-    int numberMutGene = chromosomesAmt / 100 * percent;
-    id newGene;
-    for (int i = 0; i <= numberMutGene; i++){
-        do {
-            newGene = [posibleGene objectAtIndex:(arc4random() % seed)];
-        } while ([self getGeneAtIndex:i ] == newGene);
-        [self setGene:newGene AtIndex:i];
-        
-    }
-}
 
--(void)mutateRandomGene: (int) percent{
+
+-(void)mutate: (int) percent{
     percent=percent%100; //на случай если передадут больше 100%
     
     int numberMutGene = chromosomesAmt  * percent / 100;

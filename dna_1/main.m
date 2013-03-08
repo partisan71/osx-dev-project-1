@@ -17,17 +17,17 @@ int main(int argc, const char * argv[])
         Cell * myCell1 = [[Cell alloc] init];
         Cell * myCell2 = [[Cell alloc] init];
         
-        //[myCell1 print];
-        //[myCell2 print];
+        [myCell1 print];
+        [myCell2 print];
         
         NSLog(@"Hamming distance before mutation: %i", [myCell1 hammingDistance:myCell2]);
         
-        [myCell1 mutateRandomGene:10];
-        [myCell2 mutateRandomGene:10];
+        [myCell1 mutate:10];
+        [myCell2 mutate:10];
         
         
-        //[myCell1 print];
-        //[myCell2 print];
+        [myCell1 print];
+        [myCell2 print];
         
         NSLog(@"Hamming distance after mutation: %i", [myCell1 hammingDistance:myCell2]);
         
